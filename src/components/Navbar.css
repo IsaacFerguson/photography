@@ -1,0 +1,20 @@
+.navbar{
+    margin-top: 10px;
+    font-family: "perpetua"
+}
+
+
+#home{
+    font-size: 40px;
+    padding: 10px;
+    
+}
+
+
+#navbarNav{
+  font-size: 23px;
+  position: absolute;
+  right: 0px;
+  width: 500;
+  padding: 15px;
+}
