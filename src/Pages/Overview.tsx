@@ -20,7 +20,7 @@ export default function Overview() {
       <div className="gallery">
         <PhotoAlbum
           breakpoints={[200, 400, 200]}
-          layout="rows"
+          layout="masonry"
           photos={photos}
         />
       </div>

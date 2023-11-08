@@ -1,6 +1,14 @@
 import Navbar from "../components/Navbar";
 import PhotoAlbum from "react-photo-album";
 import "./Home.css";
+var AWS = require("aws-sdk/dist/aws-sdk-react-native");
+var myCredentials = new AWS.CognitoIdentityCredentials({
+  IdentityPoolId: "IDENTITY_POOL_ID",
+});
+var myConfig = new AWS.Config({
+  credentials: myCredentials,
+  region: "us-east-2",
+});
 
 const photos = [
   { src: "../src/Photos/DSC00203.jpeg", width: 4672, height: 7008 },
@@ -20,7 +28,7 @@ export default function Home() {
       <div className="body">
         <PhotoAlbum
           breakpoints={[100, 200, 400]}
-          layout="rows"
+          layout="masonry"
           photos={photos}
         />
       </div>
