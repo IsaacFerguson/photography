@@ -3,7 +3,7 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar fixed-top navbar-expand-lg bg-light">
         <a className="navbar-brand" id="home" href="/">
           Isaac Ferguson
         </a>
