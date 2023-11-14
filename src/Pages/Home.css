@@ -1,12 +1,18 @@
 .body{
    padding: 20px;
+   position: relative;
    
 }
-img{
-    border: 5px solid #c5c8c9;
-}
+
 
 #photo1{
-    width: 600;
-    height: 800;
+    max-width: 60%;
+    height: auto;
+    border: 15px solid #FBFAF6;
+
+}
+#photo2{
+    max-width: 30%;
+    height: auto;
+    border: 10% solid #FBFAF6;
 }

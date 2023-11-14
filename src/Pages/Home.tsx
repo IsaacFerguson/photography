@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-import PhotoAlbum from "react-photo-album";
 import "./Home.css";
 
 const photos = [
@@ -18,11 +17,17 @@ export default function Home() {
     <>
       <Navbar />
       <div className="body">
+        <a href="/CraterGallery">
+          <img
+            id="photo1"
+            className=".img-fluid mx-auto d-block"
+            src="../src/Photos/DSC00309.jpeg"
+          ></img>
+        </a>
         <img
-          id="photo1"
-          src="../src/Photos/DSC00203.jpeg"
-          width="600"
-          height="800"
+          id="photo2"
+          className=".img-fluid"
+          src="../src/Photos/DSC00236.jpeg"
         ></img>
       </div>
     </>
